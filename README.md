@@ -153,14 +153,14 @@ Options are passed down when you add the component to your app root.
 | currentLocale     | enUS     | String |  Locale used to retrieve messages |
 
 ```javascript
-import { GrowlerComponent } from 'flash-notification-react-redux';
+import { GrowlerContainer } from 'flash-notification-react-redux';
 import growlerMessages from 'locales/growler.locale.js';
 
 export class App extends Component {
   render() {
     return (
       <section>
-        <GrowlerComponent messages={growlerMessages} currentLocale='enUS' shownFor="9000" />
+        <GrowlerContainer messages={growlerMessages} currentLocale='enUS' shownFor="9000" />
         {this.props.children}
       </section>
     );
